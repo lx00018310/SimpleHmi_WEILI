@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleHmi_WEILI 工业工位示例</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="hmi-shell">
+      <header class="top-bar">
+        <section>
+          <p class="eyebrow">SimpleHmi_WEILI Demo</p>
+          <h1>工位作业控制台</h1>
+        </section>
+        <section class="top-status" aria-label="系统状态">
+          <span class="status-pill ok">后端在线</span>
+          <span class="status-pill ok">PLC 已连接</span>
+          <span class="status-pill warn">待人工确认</span>
+        </section>
+      </header>
+
+      <section class="grid">
+        <article class="panel main-action">
+          <div class="panel-title">
+            <span>主操作</span>
+            <strong>站点 A-03</strong>
+          </div>
+          <button class="primary-command" type="button">开始作业</button>
+          <div class="gate-list">
+            <div class="gate ok">
+              <span>安全门</span>
+              <strong>关闭</strong>
+            </div>
+            <div class="gate ok">
+              <span>托盘</span>
+              <strong>到位</strong>
+            </div>
+            <div class="gate warn">
+              <span>工单</span>
+              <strong>需确认</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel process-panel">
+          <div class="panel-title">
+            <span>当前任务</span>
+            <strong>WO-260630-018</strong>
+          </div>
+          <div class="process-steps">
+            <div class="step done">
+              <span>1</span>
+              <p>扫码完成</p>
+            </div>
+            <div class="step active">
+              <span>2</span>
+              <p>人工确认</p>
+            </div>
+            <div class="step">
+              <span>3</span>
+              <p>设备执行</p>
+            </div>
+            <div class="step">
+              <span>4</span>
+              <p>结果回传</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel metrics-panel">
+          <div class="panel-title">
+            <span>关键状态</span>
+            <strong>实时</strong>
+          </div>
+          <div class="metrics">
+            <div class="metric">
+              <span>节拍</span>
+              <strong>42s</strong>
+            </div>
+            <div class="metric">
+              <span>今日完成</span>
+              <strong>128</strong>
+            </div>
+            <div class="metric danger">
+              <span>报警</span>
+              <strong>1</strong>
+            </div>
+            <div class="metric">
+              <span>版本</span>
+              <strong>1.0.0</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel device-panel">
+          <div class="panel-title">
+            <span>设备联锁</span>
+            <strong>只读状态</strong>
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <th>PLC 通讯</th>
+                <td><span class="dot ok"></span>正常</td>
+              </tr>
+              <tr>
+                <th>读卡器</th>
+                <td><span class="dot ok"></span>正常</td>
+              </tr>
+              <tr>
+                <th>执行机构</th>
+                <td><span class="dot warn"></span>等待</td>
+              </tr>
+              <tr>
+                <th>急停回路</th>
+                <td><span class="dot ok"></span>释放</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="panel log-panel">
+          <div class="panel-title">
+            <span>事件记录</span>
+            <strong>最近 4 条</strong>
+          </div>
+          <ol class="event-list">
+            <li><time>10:42:18</time><span>工单进入人工确认</span></li>
+            <li><time>10:41:50</time><span>PLC 状态刷新成功</span></li>
+            <li><time>10:41:32</time><span>托盘到位信号有效</span></li>
+            <li><time>10:40:55</time><span>终端完成版本健康检查</span></li>
+          </ol>
+        </article>
+
+        <article class="panel ops-panel">
+          <div class="panel-title">
+            <span>维护动作</span>
+            <strong>受控入口</strong>
+          </div>
+          <div class="ops-actions">
+            <button type="button">查看配置</button>
+            <button type="button">健康检查</button>
+            <button type="button" class="danger">报警复位</button>
+          </div>
+          <p class="ops-note">正式项目中，危险动作必须经过权限、二次确认、互锁和日志记录。</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
