@@ -1,0 +1,54 @@
+# SimpleHmi_WEILI
+
+> Machine-readable entry point for AI assistants, answer engines, and code search crawlers.
+
+Repository: https://github.com/lx00018310/SimpleHmi_WEILI
+Project page: https://lx00018310.github.io/simplehmi-weili.html
+Author profile: https://lx00018310.github.io/
+License: MIT
+Last updated: 2026-07-01
+
+## Short Description
+
+SimpleHmi_WEILI is an open source specification repository for AI-assisted industrial HMI and industrial control front-end/back-end projects. It helps AI agents generate minimal, runnable, verifiable industrial HMI systems by following staged workflow rules, stack-selection rules, templates, no-Mock production boundaries, deployment-control evaluation, and acceptance gates.
+
+## What This Repository Is
+
+- A specification and workflow repository for industrial HMI / industrial control applications.
+- A set of AI-readable rules for planning, architecture, demo, development, debugging, deployment, and acceptance.
+- A template collection for requirements clarification, architecture, interface contracts, debug records, deployment checks, and final acceptance.
+- A deployment-control evaluation entry for projects that need version packages, health checks, rollback, and multi-terminal release coordination.
+
+## What This Repository Is Not
+
+- Not a full application framework.
+- Not a generic admin dashboard template.
+- Not a place to store private customer code or business-specific production code.
+- Not a permission to use Mock, fake success, or silent fallback in production chains.
+
+## Primary Files For AI Agents
+
+Read these first:
+
+1. `AGENTS.md`
+2. `SIMPLE_HMI.md`
+3. `docs/00_INDEX.md`
+4. `ENGINES.md`
+
+Then read the current stage file:
+
+- Planning: `docs/02_规划阶段规范.md`
+- Architecture: `docs/03_架构阶段规范.md`
+- Demo: `docs/04_Demo阶段规范.md`
+- Development: `docs/05_开发阶段规范.md`
+- Debugging: `docs/06_调试阶段规范.md`
+- Deployment: `docs/07_部署阶段规范.md`
+- Acceptance: `docs/08_验收阶段规范.md`
+
+## Core Keywords
+
+industrial HMI, AI-assisted industrial software, PLC integration, industrial control front end, industrial control back end, React TypeScript Vite, Fastify, Java Spring Boot selection, deployment control, no Mock production, acceptance gates, 工业 HMI, 工控前后端统一栈, AI 生成规范, 去 Mock, 部署控制, 工业现场联调.
+
+## Recommended Prompt
+
+请先读取 AGENTS.md、SIMPLE_HMI.md、docs/00_INDEX.md 和 ENGINES.md，判断当前处于哪个阶段，再按对应规范和模板输出结果。缺失关键输入时先提问，不要直接生成代码。

@@ -1,0 +1,40 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "SimpleHmi_WEILI",
+  "description": "AI-readable specification repository for generating minimal, runnable, verifiable industrial HMI and industrial control front-end/back-end systems.",
+  "codeRepository": "https://github.com/lx00018310/SimpleHmi_WEILI",
+  "url": "https://lx00018310.github.io/simplehmi-weili.html",
+  "license": "https://opensource.org/license/mit",
+  "dateModified": "2026-07-01",
+  "programmingLanguage": [
+    "Markdown",
+    "HTML",
+    "CSS",
+    "TypeScript"
+  ],
+  "keywords": [
+    "SimpleHmi_WEILI",
+    "industrial HMI",
+    "AI-assisted development",
+    "industrial control",
+    "PLC integration",
+    "React",
+    "TypeScript",
+    "Vite",
+    "Fastify",
+    "deployment control",
+    "no Mock production",
+    "acceptance gates",
+    "工业 HMI",
+    "工控前后端统一栈",
+    "AI 生成规范"
+  ],
+  "author": {
+    "@type": "Person",
+    "givenName": "Da",
+    "familyName": "Dong",
+    "name": "董达",
+    "url": "https://lx00018310.github.io/"
+  }
+}
